@@ -1,0 +1,19 @@
+Primero debes instalar node.js y darle a la casilla add to PATH
+Luego vereficas la instalacion en la terminal de vscode con los comandos:
+    node -v y npm -v
+Crear el proyecto
+npm create vite@latest nombreProyecto
+Elige la plantilla preferiblemente js+swc o otras si sabes typescript
+Cambia al directorio del proyecto
+    cd nombreProyecto
+Instalar las dependencias npm install
+Abre el proyecto en vscode:
+    code .
+Inicia el servidor de desarrollo con    
+    npm run dev
+
+En caso de que no te funcione el comando npm run dev  -- --host añadir en vite.config.js
+     plugins: [react()],
+  server: {
+    host: true, // Asegúrate de que esta línea esté presente
+  },
