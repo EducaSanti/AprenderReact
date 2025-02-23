@@ -17,7 +17,7 @@ En caso de que no te funcione el comando npm run dev  -- --host añadir en vite.
   server: {
     host: true, // Asegúrate de que esta línea esté presente
   },
-useState
+1useState
 Sirve para manejar el estado dentro de un componente funcional.
 const [contador, setContador] = useState(0);
 useEffect
@@ -25,3 +25,19 @@ Se usa para manejar efectos secundarios en los componentes, como llamadas a APIs
  useEffect(() => {
     console.log("El contador cambió:", contador);
   }, [contador]); // Se ejecuta cuando cambia 'contador'
+
+
+### Síncrono (Bloqueante)
+
+- Las tareas se ejecutan una después de otra
+- Cada tarea debe esperar a que termine la anterior
+- Es como hacer fila en el banco: debes esperar tu turno
+
+### Asíncrono (No Bloqueante)
+
+- Las tareas pueden ejecutarse simultáneamente
+- No hay que esperar a que termine una tarea para iniciar otra
+- Es como enviar varios mensajes por WhatsApp: puedes enviar el siguiente sin esperar respuesta
+
+IMPORTANTE!!
+REACT es asíncrono
